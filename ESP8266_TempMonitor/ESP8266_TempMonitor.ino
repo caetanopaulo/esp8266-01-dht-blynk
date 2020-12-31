@@ -156,7 +156,7 @@ void setup() {
 
 
 void loop() {
-  delay(60000);
+  delay(9000);
   
   humidity = dht.getHumidity();
   temperature = dht.getTemperature();
@@ -166,7 +166,7 @@ void loop() {
   Blynk.virtualWrite(V6, humidity); //sending to Blynk
 
   digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
+  delay(1000);
   digitalWrite(LED_BUILTIN, HIGH);
 
 }
