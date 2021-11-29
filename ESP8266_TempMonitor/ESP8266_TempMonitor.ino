@@ -36,7 +36,8 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   ticker.attach(0.6, tick);
 
-  dht.setup(2, DHTesp::DHT11);
+  //dht.setup(2, DHTesp::DHT11);
+  dht.setup(2, DHTesp::DHT22);
 
   //clean FS, for testing
   //SPIFFS.format();
