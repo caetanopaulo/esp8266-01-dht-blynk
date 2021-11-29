@@ -99,7 +99,9 @@ void setup() {
     Serial.println("failed to connect and hit timeout");
     ticker.attach(0.2, tick);
     //reset and try again, or maybe put it to deep sleep
-    ESP.reset();
+    delay(3000);
+    //reset and try again, or maybe put it to deep sleep
+    ESP.restart();
     delay(5000);
   }
 
